@@ -12,3 +12,4 @@
 | Беговая дорожка | 11к | https://ozon.ru/t/sXVfSXT |
 | Гиря 30+кг | 12к+ | https://kettlebell.ru/Ural |
 | Комплект вентиляторов — 3x Noctua NF-A12x25 PWM, 1x Noctua NF-A9x14 PWM, Хаб Arctic Case Fan Hub | 16к | — |
+| FPV комплект — DJI O4 Air Unit, дрон 3'' 4S, DJI Goggles 3 | 80к-95к | — |
