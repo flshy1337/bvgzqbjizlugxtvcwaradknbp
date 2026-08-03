@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вишлист</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1rem; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid #ddd; }
+  th { font-weight: 600; }
+  tbody tr:hover { background: #f6f6f6; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #16161a; color: #eee; }
+    th, td { border-color: #333; }
+    tbody tr:hover { background: #202024; }
+    a { color: #7db9ff; }
+  }
+</style>
+</head>
+<body>
+<h1>Вишлист</h1>
+<table><thead></thead><tbody></tbody></table>
+
+<script>
+const cells = line => line.split('|').slice(1, -1).map(s => s.trim());
+
+fetch('wishlist.md')
+  .then(r => r.text())
+  .then(md => {
+    const rows = md.trim().split('\n')
+      .filter(l => l.includes('|') && !/^\s*\|[\s|:-]+\|\s*$/.test(l))
+      .map(cells);
+    const [head, ...body] = rows;
+    document.querySelector('thead').innerHTML =
+      '<tr>' + head.map(h => `<th>${h}</th>`).join('') + '</tr>';
+    document.querySelector('tbody').innerHTML = body.map(r =>
+      '<tr>' + r.map(c => `<td>${
+        /^https?:\/\//.test(c) ? `<a href="${c}" target="_blank" rel="noopener">ссылка</a>` : c
+      }</td>`).join('') + '</tr>'
+    ).join('');
+  })
+  .catch(e => document.body.append('Не смог прочитать wishlist.md: ' + e));
+</script>
+</body>
+</html>
