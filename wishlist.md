@@ -2,6 +2,7 @@
 |---|---|---|
 | DF54 | 17к | https://ozon.ru/t/Rh7nfp8 |
 | Melitta EPOUR | 28к | https://ozon.ru/t/sXVEDv7 |
+| ИЛИ Moccamaster KBG 741 | 28к | https://ozon.ru/t/2zUZpa6 |
 | jRL ONYX | 9к | https://ozon.ru/t/J58xr4z |
 | UGREEN CM692 | 7.5к | https://ozon.ru/t/j71eIzV |
 | Эргономичный стул | ??к | https://ozon.ru/t/7GfRtSk |
