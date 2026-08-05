@@ -11,11 +11,14 @@
   th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid #ddd; }
   th { font-weight: 600; }
   tbody tr:hover { background: #f6f6f6; }
+  h3 { margin-top: 1.5rem; margin-bottom: .3rem; }
+  p { color: #666; margin: .3rem 0 1rem; }
   @media (prefers-color-scheme: dark) {
     body { background: #16161a; color: #eee; }
     th, td { border-color: #333; }
     tbody tr:hover { background: #202024; }
     a { color: #7db9ff; }
+    p { color: #999; }
   }
 </style>
 </head>
@@ -25,25 +28,46 @@
 
 <script>
 const cells = line => line.split('|').slice(1, -1).map(s => s.trim());
+const inline = s => s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+const cell = c => c.split('·').map(s => s.trim())
+  .map(s => /^https?:\/\//.test(s) ? `<a href="${s}" target="_blank" rel="noopener">ссылка</a>` : inline(s))
+  .join(' · ');
 
 const table = md => {
   const [head, ...body] = md.trim().split('\n')
     .filter(l => l.includes('|') && !/^\s*\|[\s|:-]+\|\s*$/.test(l))
     .map(cells);
   return '<table><thead><tr>' + head.map(h => `<th>${h}</th>`).join('') + '</tr></thead><tbody>'
-    + body.map(r => '<tr>' + r.map(c => `<td>${
-        /^https?:\/\//.test(c) ? `<a href="${c}" target="_blank" rel="noopener">ссылка</a>` : c
-      }</td>`).join('') + '</tr>').join('')
+    + body.map(r => '<tr>' + r.map(c => `<td>${cell(c)}</td>`).join('') + '</tr>').join('')
     + '</tbody></table>';
+};
+
+// renders a mix of table blocks and plain-text paragraphs
+const block = md => {
+  let html = '', tableLines = [];
+  const flush = () => { if (tableLines.length) { html += table(tableLines.join('\n')); tableLines = []; } };
+  for (const line of md.split('\n')) {
+    if (line.includes('|')) { tableLines.push(line); continue; }
+    flush();
+    const t = line.trim();
+    if (t) html += `<p>${inline(t)}</p>`;
+  }
+  flush();
+  return html;
 };
 
 fetch('wishlist.md')
   .then(r => r.text())
   .then(md => {
-    const parts = md.trim().split(/^##\s*(.+)$/m);
+    const parts = md.trim().split(/^##\s+(.+)$/m);
     let html = '';
     for (let i = 1; i < parts.length; i += 2) {
-      html += `<h2>${parts[i].trim()}</h2>` + table(parts[i + 1]);
+      html += `<h2>${parts[i].trim()}</h2>`;
+      const sub = parts[i + 1].split(/^###\s+(.+)$/m);
+      html += block(sub[0]);
+      for (let j = 1; j < sub.length; j += 2) {
+        html += `<h3>${sub[j].trim()}</h3>` + block(sub[j + 1]);
+      }
     }
     document.getElementById('wishlist').innerHTML = html;
   })

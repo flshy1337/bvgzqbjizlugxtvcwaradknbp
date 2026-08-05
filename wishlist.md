@@ -29,16 +29,52 @@
 | Беговая дорожка | 11к | https://ozon.ru/t/sXVfSXT |
 | Гиря 30+кг | 12к+ | https://kettlebell.ru/Ural |
 
-## ПК: корпус и охлаждение 
+## ПК: корпус и охлаждение
+
+### Обязательное
 
 | Название | Цена | Ссылка |
 |---|---|---|
-| Корпус Lian Li A4-H2O | 15к | https://www.ozon.ru/product/korpus-lian-li-a4h2o-2347868807/ |
-| AIO Lian Li Galahad 240 UNI FAN SL120 (радиатор ≤30мм) | 8.5к | https://www.ozon.ru/product/sistema-ohlazhdeniya-lian-li-galahad-aio-240-uni-fan-sl120-edition-2040640593/ |
-| Термопаста Arctic MX-4 / Noctua NT-H1 (запасная) | 700 ₽ | — |
-| Угловой адаптер 12VHPWR 90° | 2к | — |
-| Кастомные короткие кабели БП под Chieftec CSN-650C (под заказ, осторожно с распиновкой) | 3к-6к | — |
-| ИЛИ Комплект вентиляторов — 3x Noctua NF-A12x25 PWM, 1x Noctua NF-A9x14 PWM, Хаб Arctic Case Fan Hub (дешёвый вариант без смены корпуса) | 16к | — |
+| Корпус Lian Li A4-H2O (чёрный) | ~15к | https://www.dns-shop.ru/product/71e63bb6564fed20/korpus-lian-li-a4-h2o-g99a4h2ox4r0-cernyj/ |
+| Корпус Lian Li A4-H2O (серый) | ~15к | https://www.dns-shop.ru/product/67dbbe75e88bed20/korpus-lian-li-a4-h2o-g99a4h2oa4r0-seryj/ |
+| Корпус — альтернативные площадки | ~15к | https://www.ozon.ru/product/korpus-lian-li-a4h2o-2347868807/ · https://www.citilink.ru/product/korpus-lian-li-a4h2o-chernyi-bez-bp-miniitx-1xusb3-0-1xusb3-1-audio-bo-2085999/ |
+
+### СВО — выбрать одну
+
+| Название | Цена | Ссылка |
+|---|---|---|
+| be quiet! Silent Loop 3 240 (приоритет: тихая помпа + порт дозаправки, проверена в этом корпусе) | ~12-15к | https://www.dns-shop.ru/product/768d0f8c614fd582/sistema-ohlazdenia-be-quiet-silent-loop-3-240-cernaa/ |
+| Lian Li Galahad 240 UNI FAN SL120 (свой бренд, дешевле) | ~8-10к | https://www.ozon.ru/product/sistema-ohlazhdeniya-lian-li-galahad-aio-240-uni-fan-sl120-edition-2040640593/ |
+| Lian Li Galahad 240 — AliExpress | ~8-10к | https://aliexpress.ru/item/1005003845129291.html |
+
+⚠️ Перед покупкой сверьте высоту помпы — лимит **55 мм**.
+
+### Расходники
+
+| Название | Цена | Ссылка |
+|---|---|---|
+| Термопаста Arctic MX-4 / Noctua NT-H1 (про запас) | ~700₽ | искать на DNS/Ozon по названию |
+
+### Опционально
+
+| Название | Цена | Ссылка |
+|---|---|---|
+| Кастомные короткие кабели БП под Chieftec (только под заказ, распиновка!) | ~3-6к | под заказ на Ozon/Avito |
+| Угловой адаптер 12VHPWR 90° (скорее всего не нужен) | ~2к | по факту сборки |
+| Noctua NF-A12x25 G2 (замена штатных вентиляторов радиатора) | ~7к/пара | https://oriontech.ru/catalog/komlektuyushchie/okhlazhdenie/korpusnye_vntilyatory/2480332/ |
+
+### Не нужно покупать
+
+| Название | Причина |
+|---|---|
+| Корпусные вентиляторы | В A4-H2O единственное место — радиатор сверху |
+| PWM-хаб | Всего 2 вентилятора, идут через сплиттер помпы |
+| Кулер CPU | Заменяется на СВО |
+| Память | Ваша Lancer Blade 33.8 мм — влезает с запасом |
+
+**Итого обязательное: ~24-31к** (корпус + СВО + термопаста)
+
+Старый Jonsbo T8 Plus и ID-Cooling SE-207-XT Slim продайте на Avito — вернёте часть суммы.
 
 ## Дроны
 
