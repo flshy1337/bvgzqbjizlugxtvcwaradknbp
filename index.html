@@ -6,7 +6,8 @@
 <title>Вишлист</title>
 <style>
   body { font-family: system-ui, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1rem; }
-  table { border-collapse: collapse; width: 100%; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 2rem; }
+  h2 { margin-top: 2.5rem; }
   th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid #ddd; }
   th { font-weight: 600; }
   tbody tr:hover { background: #f6f6f6; }
@@ -20,25 +21,31 @@
 </head>
 <body>
 <h1>Вишлист</h1>
-<table><thead></thead><tbody></tbody></table>
+<div id="wishlist"></div>
 
 <script>
 const cells = line => line.split('|').slice(1, -1).map(s => s.trim());
 
+const table = md => {
+  const [head, ...body] = md.trim().split('\n')
+    .filter(l => l.includes('|') && !/^\s*\|[\s|:-]+\|\s*$/.test(l))
+    .map(cells);
+  return '<table><thead><tr>' + head.map(h => `<th>${h}</th>`).join('') + '</tr></thead><tbody>'
+    + body.map(r => '<tr>' + r.map(c => `<td>${
+        /^https?:\/\//.test(c) ? `<a href="${c}" target="_blank" rel="noopener">ссылка</a>` : c
+      }</td>`).join('') + '</tr>').join('')
+    + '</tbody></table>';
+};
+
 fetch('wishlist.md')
   .then(r => r.text())
   .then(md => {
-    const rows = md.trim().split('\n')
-      .filter(l => l.includes('|') && !/^\s*\|[\s|:-]+\|\s*$/.test(l))
-      .map(cells);
-    const [head, ...body] = rows;
-    document.querySelector('thead').innerHTML =
-      '<tr>' + head.map(h => `<th>${h}</th>`).join('') + '</tr>';
-    document.querySelector('tbody').innerHTML = body.map(r =>
-      '<tr>' + r.map(c => `<td>${
-        /^https?:\/\//.test(c) ? `<a href="${c}" target="_blank" rel="noopener">ссылка</a>` : c
-      }</td>`).join('') + '</tr>'
-    ).join('');
+    const parts = md.trim().split(/^##\s*(.+)$/m);
+    let html = '';
+    for (let i = 1; i < parts.length; i += 2) {
+      html += `<h2>${parts[i].trim()}</h2>` + table(parts[i + 1]);
+    }
+    document.getElementById('wishlist').innerHTML = html;
   })
   .catch(e => document.body.append('Не смог прочитать wishlist.md: ' + e));
 </script>
