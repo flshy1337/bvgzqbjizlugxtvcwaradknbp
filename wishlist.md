@@ -29,6 +29,8 @@
 
 ⚠️ Ноги для стола с подъёмником — минимальная высота подъёма **60 см**, ниже не брать.
 
+⚠️ Эргономичный стул — выбирать среди брендов: metta, evolution, sihoo, norden, d&M, rivo, schairs, sunon, gt chair, healty chair, profim, mayer, cactus, interstuhl, hbada, hinomi, hookay(expert), sparx, foxgear, dauphin, sidiz, harachair, duorest.
+
 ## Спорт
 
 | Название | Цена | Ссылка |
@@ -90,6 +92,29 @@
 | Название | Цена | Ссылка |
 |---|---|---|
 | FPV комплект — DJI O4 Air Unit, дрон 3'' 4S, DJI Goggles 3 | 80к-95к | — |
+
+## Библиотека
+
+| Название | Цена | Ссылка |
+|---|---|---|
+| Практика системного и сетевого администрирования, 3-е издание | 4.5к | https://ozon.ru/t/ukjX12V |
+| Командная строка Linux. Полное руководство, 2-е межд. издание — Уильям Шоттс | 1.5к | https://ozon.ru/t/RhW5gkS |
+| Книга цитат Папича | 1к | https://ozon.ru/t/ivF4SKh |
+| Шопенгауэр — Афоризмы житейской мудрости | 200 ₽ | https://ozon.ru/t/EISCOOg |
+
+## Игрушки
+
+| Название | Цена | Ссылка |
+|---|---|---|
+| Steam Deck OLED | 80к | https://ozon.ru/t/QWAqgPf |
+| Steam Controller | 30к | https://ozon.ru/t/8MCA9Ma |
+
+## Прочее
+
+| Название | Цена | Ссылка |
+|---|---|---|
+| Монитор качества воздуха | 10к | https://ozon.ru/t/pHMW79N |
+| Выдвижной ящик под стол (нужно проверять размеры) | 5к | https://ozon.ru/t/oN0uD47 |
 
 ## Приобретено
 
