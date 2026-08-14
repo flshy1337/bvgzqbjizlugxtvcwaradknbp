@@ -28,7 +28,7 @@
 
 <script>
 const cells = line => line.split('|').slice(1, -1).map(s => s.trim());
-const inline = s => s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+const inline = s => s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/~~(.+?)~~/g, '<del>$1</del>');
 const cell = c => c.split('·').map(s => s.trim())
   .map(s => /^https?:\/\//.test(s) ? `<a href="${s}" target="_blank" rel="noopener">ссылка</a>` : inline(s))
   .join(' · ');

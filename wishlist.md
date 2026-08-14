@@ -10,7 +10,7 @@
 
 | Название | Цена | Ссылка |
 |---|---|---|
-| jRL ONYX | 9к | https://ozon.ru/t/J58xr4z |
+| ~~jRL ONYX~~ | 9к | https://ozon.ru/t/J58xr4z |
 | UGREEN CM692 | 7.5к | https://ozon.ru/t/j71eIzV |
 
 ## Рабочее место
@@ -85,3 +85,9 @@
 | Название | Цена | Ссылка |
 |---|---|---|
 | FPV комплект — DJI O4 Air Unit, дрон 3'' 4S, DJI Goggles 3 | 80к-95к | — |
+
+## Приобретено
+
+| Название | Цена | Ссылка |
+|---|---|---|
+| jRL ONYX | 9к | https://ozon.ru/t/J58xr4z |
