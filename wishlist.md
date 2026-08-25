@@ -2,8 +2,8 @@
 
 | Название | Цена | Ссылка |
 |---|---|---|
-| DF54 | 17к | https://ozon.ru/t/Rh7nfp8 |
-| ИЛИ DF64 (мощнее, но крупнее и дороже DF54) | ??к | — |
+| ~~DF54~~ | 17к | https://ozon.ru/t/Rh7nfp8 |
+| DF64 Gen 2 — выбрано | 24107 ₽ | https://ozon.ru/t/dwIbYu4 |
 | Melitta EPOUR | 28к | https://ozon.ru/t/sXVEDv7 |
 | ИЛИ Moccamaster KBG 741 | 28к | https://ozon.ru/t/2zUZpa6 |
 
