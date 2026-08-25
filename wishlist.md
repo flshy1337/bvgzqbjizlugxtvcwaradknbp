@@ -5,6 +5,7 @@
 | DF64 Gen 2 — выбрано | 24107 ₽ | https://ozon.ru/t/dwIbYu4 |
 | Melitta EPOUR | 28к | https://ozon.ru/t/sXVEDv7 |
 | ИЛИ Moccamaster KBG 741 | 28к | https://ozon.ru/t/2zUZpa6 |
+| ИЛИ Moccamaster KBGT (термокружка вместо колбы) | 35150 ₽ | https://ozon.ru/t/wEYThk3 |
 
 ## Периферия
 
